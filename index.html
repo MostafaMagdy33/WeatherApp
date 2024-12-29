@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+ <!--   font-family: "Roboto", serif; Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   <!-- font-awesome css link -->
+    <link rel="stylesheet" href="Css/all.min.css">
+   <!-- bootstrap css link -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- stylesheet css link -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <!-- Navbar section -->
+    <nav  class="navbar navbar-expand-lg bg-1E202B ">
+        <div class="container py-4">
+          <a class="navbar-brand d-flex" href="#">
+            <img src="Images/logo@2x.png" alt="WeatherApp-Logo">
+            <div class="ms-3 text-white">
+                <h1 class="fs-6 fw-bold ">Weather</h1>
+                <p >tagline goes here</p>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto ">
+             
+
+              <li class="nav-item ">
+                <a class="nav-link navhome" href="#Home">Home</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link ">News</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link " href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Photos</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+  <!-- End Navbar section -->
+
+    <!-- Home section -->
+      <section id="Home" class="home-sec1">
+        
+       <div class="container py-5">
+        <div class="col-md-12 position-relative ">
+          <input id="searchInpt" class="w-100 py-3 px-3 rounded-5 text-white position-relative bg-1E202B" placeholder="Find your location...." type="search">
+          <button id="Btnsubmit" class="btn btn-white  rounded-5 position-absolute text-center" type="submit">Find</button>
+        </div>
+
+       </div>
+       
+      </section>
+      <!-- End Home section -->
+
+ <!--  weatherLocation section -->
+<section class="weatherLocation-sec2 bg-1E202B">
+
+<div class="container py-5">
+<div class="row">
+<div class="col-md-12 col-lg-4">
+<div class="firstCard rounded-start-2">
+<div class="day rounded-start-2 d-flex justify-content-between text-center align-items-center p-2">
+  <span id="dayOfweek">Saturday</span>
+<span id="month">21December</span>
+</div>
+
+<div class="location d-flex flex-column p-3 pt-4">
+  <p id="cityName" class="fs-5">Cairo</p>
+  <span id="temp-c" class="text-white fw-bolder">14.3°C</span>
+  <img id="cloud" src="Images/113.png" width="90">
+  <p id="conditionweather" class="loca">clear</p>
+  <div class="py-2 ">
+    <span class="pe-2"><img class="p-1" src="Images/icon-umberella.png" alt=""><span id="Precipitation">20%</span></span>
+    <span class="pe-2"><img class="p-1" src="Images/icon-wind.png" alt=""><span  id="windSpeed">18km/h</span></span>
+    <span class="pe-2"><img class="p-1" src="Images/icon-compass.png" alt="">East</span>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="col-md-12 col-lg-4">
+  <div class="secondCard h-100">
+  <div class="day  d-flex justify-content-center text-center align-items-center p-2">
+    <span id="secondDay">Saturday</span>
+ 
+  </div>
+  
+  <div class="location d-flex flex-column align-items-center p-3 pt-5">
+    <img id="cloudtwo" src="Images/113.png" width="90">
+    <span id="mixtemp-c2" class="text-white fw-bolder">14.3°C</span>
+    <span id="mintemp-c2" class="pt-2">2.9°</span>
+    <p id="conditionweather2" class="loca pt-2">clear</p>
+  
+  </div>
+  
+  </div>
+  </div>
+  <div class="col-md-12 col-lg-4">
+    <div class="thirdCard h-100 rounded-end-2">
+    <div class="day rounded-end-2 d-flex justify-content-center text-center align-items-center p-2">
+      <span id="thirdDay" >Saturday</span>
+   
+    </div>
+    
+    <div class="location d-flex flex-column align-items-center p-3 pt-5">
+      <img id="cloud3" src="Images/113.png" width="90">
+      <span id="mixtemp3" class="text-white fw-bolder">14.3°C</span>
+      <span id="mintemp-c3" class="pt-2">2.9°</span>
+      <p id="conditionweather3" class="loca pt-2">clear</p>
+    
+    </div>
+    
+    </div>
+    </div>
+</div>
+</div>
+
+
+</section>
+ <!-- End weatherLocation section -->
+
+<footer class="footer py-5">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8">
+        <div class="position-relative"> 
+          <input type="search"  placeholder="Enter your email to subscribe..." class="w-100 py-3 my-5 rounded-5 ps-3 position-realative">
+         
+            <button class=" btn btn-blue   rounded-5 position-absolute text-center">Subscribe</button>
+<p>Copyright 2024 Company name.</p>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="iconBar text-center my-5">
+          <a href="#"><i class="fab fa-facebook-f fa-lg px-2"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg px-1"></i></a>
+          <a href="#"><i class="fab fa-google-plus-g fa-lg "></i></a>
+          <a href="#"><i class="fab fa-pinterest fa-lg px-1"></i></a>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="weatherInfo">
+
+</div>
+
+<script src="Js/all.min.js"></script>
+<script src="Js/bootstrap.bundle.min.js"></script>
+<script src="Js/main.js"></script>
+</body>
+</html>

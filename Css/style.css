@@ -1,0 +1,172 @@
+* {
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-1E202B {
+    background-color: #1E202B;
+}
+
+
+/* navbar style  */
+
+.navbar .navbar-brand img {
+    width: 64px;
+    height: 38px;
+}
+
+.navbar .navbar-brand div p {
+    font-size: 10px;
+    color: #bfc1c8;
+}
+
+.navbar .collapse .nav-item {
+    padding: 0px 10px;
+
+
+}
+
+.navbar .collapse .nav-item .nav-link {
+    padding: 5px 24px;
+    transition: 0.3s ease;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border: solid 2px #1E202B;
+    border-radius: 30px;
+    transition: ease-in-out;
+
+}
+.navbar .collapse .nav-item .navhome {
+    border: solid 2px #009ad8;
+    border-radius: 30px;
+    color: #009ad8;
+}
+.collapse .nav-item .nav-link:hover {
+    border: solid 2px #009ad8;
+    border-radius: 30px;
+    color: #009ad8;
+}
+
+/* end navbar style  */
+
+/*  Home style  */
+
+
+.home-sec1{
+    padding: 70px 0px;
+    background-image: url('../Images/banner.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+}
+.home-sec1 .container input {
+    
+    outline: none;
+    border: #1E202B;
+}
+
+.home-sec1 .container .btn-white  {
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    padding: 10px 40px;
+    background-color: #009ad8;
+    color: white;
+}
+/* end Home style  */
+
+/*  weatherLocation-sec2 style  */
+
+.weatherLocation-sec2 .col-md-4{
+   color: white;
+   padding: 0;
+}
+.weatherLocation-sec2 .firstCard{
+    background-color: #323544;
+    transform: translateY(-170px);
+    color: #bfc1c8;
+    
+}
+.weatherLocation-sec2 .firstCard .day {
+    background: #2D303D;
+  
+}
+.weatherLocation-sec2 .firstCard .location .text-white{
+    font-size: 90px;
+}
+.weatherLocation-sec2 .firstCard .location .loca {
+    color: #009ad8;
+}
+
+.weatherLocation-sec2 .secondCard{
+    background-color: #222530;
+    transform: translateY(-170px);
+    color: #bfc1c8;
+  
+}
+.weatherLocation-sec2 .secondCard .day {
+    background: #1f2128;
+  
+}
+.weatherLocation-sec2 .secondCard .location .text-white{
+    font-size: 24px;
+}
+.weatherLocation-sec2 .secondCard .location .loca {
+    color: #009ad8;
+}
+
+.weatherLocation-sec2 .thirdCard{
+    background-color: #323544;
+    transform: translateY(-170px);
+    color: #bfc1c8;
+  
+}
+.weatherLocation-sec2 .thirdCard .day {
+    background: #2D303D;
+  
+}
+
+.weatherLocation-sec2 .thirdCard .location .text-white{
+    font-size: 24px;
+}
+.weatherLocation-sec2 .thirdCard .location .loca {
+    color: #009ad8;
+}
+
+/* end weatherLocation-sec2 style  */
+
+
+/* Footer style  */
+
+.footer {
+    background-color: #222530;
+    color: #bfc1c8;
+}
+.footer input[type='search']{
+    outline: none;
+    border: #1E202B;
+    background-color: #1E202B;
+    color: white;
+}
+.footer .position-relative  .btn-blue   {
+    right: 4px;
+    top: 30%;
+    padding: 10px 20px;
+ 
+    background-color: #009ad8;
+    color: white;
+}
+.footer .iconBar a{
+    color: #009ad8;
+padding: 17px 15px;
+text-align: center;
+background-color: #1E202B;
+border-radius: 50%;
+transition: ease-in-out;
+}
+.footer .iconBar a:hover{
+    background-color: #009ad8;
+    color: white;
+}
